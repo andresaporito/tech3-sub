@@ -64,8 +64,7 @@ public class PedidoServiceTests
         var act = () => sut.CriarAsync(new CriarPedidoRequest(999, 10m), CancellationToken.None);
 
         await act.Should().ThrowAsync<DomainException>()
-            .Where(ex => ex.Message.ToLowerInvariant().Contains("nao") || ex.Message.Contains("não"))
-            .Where(ex => ex.Message.ToLowerInvariant().Contains("encontrado"));
+    .WithMessage("*Cliente*encontrado*");
 
         _pedidoRepo.Verify(x => x.AddAsync(It.IsAny<Pedido>(), It.IsAny<CancellationToken>()), Times.Never);
     }
