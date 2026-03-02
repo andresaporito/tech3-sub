@@ -1,0 +1,93 @@
+﻿
+---
+
+## .gitignore (.NET 8 + Visual Studio/VS Code)
+
+```gitignore
+# ======================================
+# .NET / Visual Studio / VS Code
+# ======================================
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]ny [Cc]PU/
+[Ll]og/
+
+# Test results / coverage
+TestResults/
+coveragereport/
+*.trx
+*.coverage
+coverage.cobertura.xml
+*.opencover.xml
+*.lcov
+*.log
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Visual Studio
+.vs/
+.vscode/
+.idea/
+
+# Rider
+*.sln.iml
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Dotnet tools
+.dotnet/
+.tool/
+
+# Environment files
+.env
+.env.*
+appsettings.*.json
+!appsettings.json
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Packages (if any)
+packages/
+
+# Azure / publish
+publish/
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+# Docker (optional)
+**/docker-compose.override.yml
+
+# Node (if front-end exists)
+node_modules/
+dist/
